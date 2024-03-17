@@ -1,0 +1,132 @@
+.Education nav {
+    position: fixed;
+    top: 9.8%; 
+    width: 16%; 
+    height: calc(100vh - 50px); 
+    background-color: #647700;
+    color: #fff;
+    padding: 20px;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.Education nav a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0; 
+    font-size: 2.5vw; 
+}
+
+.Education nav a:hover {
+    color: #DBF074; 
+    transform: scale(1.05);
+}
+
+.Education h1 {
+    margin-top: 30px;
+    padding-left: 50px;
+    margin-left: 20%;
+    color: #333;
+}
+
+.Education .fraudulent-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+    
+.Education .fraudulent-container:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+    
+.Education .fraudulent-img {
+    width: 90%;
+    height: 35vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+.Education .fraudulent-container span {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+    
+.Education .fraudulent-type {
+    color: #000;
+}
+    
+.Education .fraudulent-container {
+    background-color: #fff;
+}
+
+.Education .report {
+    margin-left: 30%;
+}
+
+.Education .report .btn {
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+@media (min-width: 1400px) {
+
+    .Education nav {
+        top: 12%;
+        width: 15%;  
+    }
+    
+    .Education h1 {
+        margin-left: 18%;
+    }
+    
+    .Education h2 {
+        margin-top: 0;
+    }
+    
+    .Education p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .Education nav p {
+        font-size: 1.5vw; 
+    }
+
+    .Education nav a {
+        font-size: 1.2vw; 
+    }
+    
+    .Education .content {
+        padding: 50px;
+    }
+    
+    .Education .fraudulent-container {
+        flex-direction: row;
+        margin-left: 18%;
+    }
+    
+    .Education .fraudulent-img {
+        width: 40%;
+        height: 20vw;
+    }
+    
+    .Education .fraudulent-container span {
+        padding: 20px;
+    }
+   
+    .Education .report {
+        margin-left: 18%;
+    }
+    
+}

@@ -1,0 +1,203 @@
+.NewsSection .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.NewsSection h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #FFF;
+    background-color: #647700;
+    padding: 10px;
+    padding-left: 8px;
+}
+
+.NewsSection .top-container {
+    display: flex;
+    margin-top: 1.2%;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.NewsSection .top-container .left-container,
+.NewsSection .top-container .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.NewsSection .top-container .left-container .news-container .news-img {
+    height: 490px;
+}
+
+.NewsSection .top-container .right-container .news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.NewsSection .top-container .right-container .news-container .news-img {
+    width: 100%;
+    height: 30vw;
+}
+
+.news-img {
+    background-color: #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.NewsSection .top-container .left-container .news-img {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+
+.news-container:hover {
+    transform: scale(1.015); 
+}
+
+.btn {
+    background-color: #647700;
+    color: #fff;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 200px; 
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: #5b6600; 
+}
+
+
+.Link {
+    text-decoration: none;
+    color: #000;
+}
+
+.news-loc, .news-title {
+    font-size: 20px;
+    color: #333; 
+}
+
+.news-desc {
+    font-size: 15px;
+    color: #555; 
+}
+
+.news-time {
+    font-size: 13px;
+    color: #777; 
+}
+
+.NewsSection .bottom-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.NewsSection .bottom-container .left-container,
+.NewsSection .bottom-container .right-container {
+    width: 100%;
+}
+
+.NewsSection .bottom-container .left-container .news-container,
+.NewsSection .bottom-container .right-container .news-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+} 
+
+.NewsSection .bottom-container .left-container .news-img,
+.NewsSection .bottom-container .right-container .news-img {
+    width: 80%;
+    height: 25vw;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.NewsSection .bottom-container .left-container .news-title,
+.NewsSection .bottom-container .right-container .news-title {
+    font-size: 16px;
+    color: #333; 
+}
+
+.NewsSection .top-container .right-container .news-title {
+    font-size: 18px;
+}
+
+.NewsSection .top-container .right-container .news-desc {
+    font-size: 12px;
+}
+
+.NewsSection .top-container .right-container .news-time {
+    font-size: 10px;
+}
+
+@media (min-width: 1400px) {
+    .NewsSection .top-container {
+        flex-direction: row;
+    }
+
+    .NewsSection .left-container {
+        width: 70%;
+    }
+
+    .NewsSection .top-container .right-container .news-container {
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+    }
+  
+
+    .NewsSection .top-container .right-container .news-img {
+        width: 300px !important;
+        height: 150px !important;
+    }
+
+    .NewsSection .bottom-container {
+        display: flex;
+        flex-direction: row;
+        padding: 250px;
+        padding-top: 30px;
+        gap: 100px;
+    }
+
+    .NewsSection .bottom-container .left-container,
+    .NewsSection .bottom-container .right-container {
+        width: 50%;
+    }
+
+    .NewsSection .bottom-container .left-container .news-container,
+    .NewsSection .bottom-container .right-container .news-container {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    } 
+
+    .NewsSection .bottom-container .left-container .news-img,
+    .NewsSection .bottom-container .right-container .news-img {
+        width: 25vw;
+        height: 8vw;
+    }
+
+    .NewsSection .bottom-container .left-container .news-title,
+    .NewsSection .bottom-container .right-container .news-title {
+        font-size: 16px;
+    }
+}

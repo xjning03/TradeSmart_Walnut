@@ -1,0 +1,28 @@
+.nav {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #647700;
+    padding: 15px; 
+    transition: background 0.5s ease-in-out; 
+    position: relative;
+    overflow: hidden;
+}
+
+.nav a {
+    color: #EEE;
+    text-decoration: none;
+    font-size: 2.8vw;
+}
+
+.nav a:hover {
+    color: #DBF074;
+}
+
+@media (min-width: 1400px) {
+    .nav a {
+        font-size: 1.45vw;
+    }
+}
