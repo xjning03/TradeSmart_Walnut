@@ -7,6 +7,7 @@ import NewsSection from './NewsSection';
 import NewsDetailed from './NewsDetailed';
 import Education from './Education';
 import Report from './Report';
+import TradingDetailed from './TradingDetailed';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/news" exact component={NewsSection} />
         <Route path="/newsSection/:newsType" component={NewsSection} />
         <Route path="/newsDetailed" component={NewsDetailed} />
+        <Route path="/tradingDetailed" component={TradingDetailed} />
         <Route path="/education" component={Education} />
         <Route path="/report" component={Report} />
         <Route path="/" component={Home} />
