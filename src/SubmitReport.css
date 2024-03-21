@@ -1,9 +1,8 @@
 
 .submit-content {
-    width: 1000px; 
-    padding: 20px; 
+    width: auto; 
+    padding: 0% 3% 3% 17%; 
     box-sizing: border-box; 
-
 }
 
 #personal-details-container {

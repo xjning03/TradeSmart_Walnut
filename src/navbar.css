@@ -27,6 +27,11 @@
     transform: scale(1.05);
 }
 
+.navbar a:active {
+    color: #647700;
+    font-weight: bold;
+}
+
 @media (min-width: 1400px) {
     .navbar a {
       font-size: 1.5vw;

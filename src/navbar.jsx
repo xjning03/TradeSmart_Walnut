@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.css';
 
 function Navbar() {
@@ -27,11 +27,11 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <Link to="/Home">Home</Link>
-            <Link to="/Personalised">Personalised</Link>
-            <Link to="/News">News</Link>
-            <Link to="/Education">Educational Resources</Link>
-            <Link to="/Report">Report Fraud</Link>
+            <a><NavLink activeClassName='active' to="/Home">Home</NavLink></a>
+            <a><NavLink activeClassName='active' to="/Personalised">Personalised</NavLink></a>
+            <a><NavLink activeClassName='active' to="/News">News</NavLink></a>
+            <a><NavLink activeClassName='active' to="/Education">Educational Resources</NavLink></a>
+            <a><NavLink activeClassName='active' to="/Report">Report Fraud</NavLink></a>
         </nav>
     );
 }

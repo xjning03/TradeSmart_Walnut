@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Switch, Route, NavLink } from 'react-router-dom';
 import './Report.css';
 import myComplaintIcon from './assets/images/myComplaintIcon.png';
 import submitComplaintIcon from './assets/images/submitComplaintIcon.png';
@@ -11,20 +11,20 @@ function Report() {
         <Router>
             <div>
                 <div className='Report' id='Report'>
-                    <div className='toolbar' id='toolbar'>
-                        <div className="toolbar-row">
-                            <Link to="/report">
-                                <img src={myComplaintIcon} className='report-icon' alt='My Complaint Icon' />
+                    <nav>
+                        <a className='myComplaint'>
+                            <NavLink to="/report" activeClassName='active'>
+                                <img src={myComplaintIcon} className='report-icon' alt='My Complaint Icon'/>
                                 <span className='toolbar-name' id='toolbal-name'>My Complaint</span>
-                            </Link>
-                        </div>
-                        <div className="toolbar-row">
-                            <Link to="/submit-report">
+                            </NavLink>
+                        </a>
+                        <a className="submit">
+                            <NavLink to="/submit-report" activeClassName='active'>
                                 <img src={submitComplaintIcon} className='report-icon' alt='New Complaint Icon' />
                                 <span className='toolbar-name' id='toolbal-name'>Submit Complaint</span>
-                            </Link>
-                        </div>
-                    </div>
+                            </NavLink>
+                        </a>
+                    </nav>
 
                     <Switch>
                         <Route path="/report">

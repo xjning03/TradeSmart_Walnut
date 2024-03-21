@@ -1,97 +1,97 @@
 .Report{
     display: flex;
-    height: 100vh;
+    height: auto;
     text-align:left;
 }
 
-.Report .toolbar-row .report-icon {
+.Report nav {
+  position: fixed;
+  top: 10%; 
+  width: 12%; 
+  height: calc(100vh - 50px); 
+  background-color: #647700;
+  color: #fff;
+  padding: 20px;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.Report nav a {
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  align-items: center; 
+}
+
+.Report nav img {
+  width: 24px;
+  height: auto;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.Report nav a:hover {
+  color: #DBF074; 
+  transform: scale(1.05);
+}
+
+.Report nav a.active {
+  color: #f0ffa2;
+  font-weight: bold;
+}
+  
+.Report .fraud-content {
+  flex: 1; 
+  padding: 0% 3% 3% 17%; 
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.Report .fraud-content .fraudContent-image{
+  width: 20%;
+  height: auto;
+}
+
+.Report .fraud-content .fraudContent-imgAndP p {
+  flex: 1;
   margin-left: 10px;
-    width: 24px;
-    height: auto;
-    padding: 5px;
-  }
+}
 
-  .Report .toolbar-row {
-    display: flex;
-    align-items: center; 
-    height: 50px;
-  }
+.Report .fraud-content .fraudContent-imgAndP {
+  display: flex;
+}
 
 
-  .Report .toolbar-row .toolbar-name {
-    margin-left: 5px;
-    vertical-align: middle;
-    display: inline-block;
-  }
 
-  .Report .toolbar-row:hover {
-    background-color: #F3F3F3;
-    cursor: pointer; 
-  }
+.Report .fraud-content .table-container {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
 
-  .Report .toolbar-row:clicked {
-    background-color: #F3F3F3;
-    
-  }
+.Report .fraud-content .complaint-table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0; 
+  border-radius: 8px; 
+}
 
 
-  .Report .toolbar {
-    width: 200px; 
-    background-color: #ffffff; 
-    align-items: center; 
-    border: 1px solid #ccc;
-  }
-  
-  .Report .fraud-content {
-    flex: 1; 
-    padding: 10px; 
-    flex-direction: column;
-    border: 1px solid #ccc;
-  }
 
-  .Report .fraud-content .fraudContent-image{
-    width: 20%;
-    height: auto;
-  }
+.Report .fraud-content .complaint-table th {
+  background-color: #ffffff; 
+  color: #000000;
+}
 
-  .Report .fraud-content .fraudContent-imgAndP p {
-    flex: 1;
-    margin-left: 10px;
-  }
-
-  .Report .fraud-content .fraudContent-imgAndP {
-    display: flex;
-  }
-
-  
-
-  .Report .fraud-content .table-container {
-    margin-top: 20px;
-    width: 100%;
-    overflow-x: auto;
-  }
-  
-  .Report .fraud-content .complaint-table {
-    width: 100%;
-    border-collapse: separate; 
-    border-spacing: 0; 
-    border-radius: 8px; 
-  }
-  
-  
-  
-  .Report .fraud-content .complaint-table th {
-    background-color: #ffffff; 
-    color: #000000;
-  }
-
-  .Report .fraud-content .complaint-table th[colspan="7"] {
-    background-color: #c0c0c0; 
-    color: #000; 
+.Report .fraud-content .complaint-table th[colspan="7"] {
+  background-color: #c0c0c0; 
+  color: #000; 
 }
 
 .Report .fraud-content .complaint-table thead th {
-    color: #666; 
+  color: #666; 
 }
 
 
