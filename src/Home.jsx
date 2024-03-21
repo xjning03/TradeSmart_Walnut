@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import "./Home.css";
 
-function SearchBar() {
+function SearchBar({setSearchQuery}) {
+  const handleChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <div className="search-bar">
-      <input type="text" placeholder="Search..." style={{ width: "250px" }} />
+      <input 
+        type="text" 
+        placeholder="Search..." 
+        onChange={handleChange}
+        style={{ width: "250px" }} 
+      />
     </div>
   );
 }
 
 function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
   const [isStockSelected, setIsStockSelected] = useState(true);
   const [isCryptoSelected, setIsCryptoSelected] = useState(false);
 
@@ -134,11 +144,15 @@ function Home() {
     }
   ];
   
+  const filteredTableData = tableData.filter((rowData) =>
+  rowData.name.toLowerCase().includes(searchQuery.toLowerCase())||
+  rowData.symbol.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="Home" id="Home">
       <div className="search-bar-container">
-        <SearchBar />
+        <SearchBar setSearchQuery={setSearchQuery}/>
       </div>
 
       <div className={`form-box`}>
@@ -175,7 +189,7 @@ function Home() {
             </tr>
           </thead>
           <tbody>
-          {tableData.map((rowData, index) => (
+          {filteredTableData.map((rowData, index) => (
               <tr key={index}>
                 <td className="symbol-text">{rowData.symbol}</td>
                 <td>{rowData.name}</td>
