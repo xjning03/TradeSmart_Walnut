@@ -1,0 +1,102 @@
+
+.submit-content {
+    width: 1000px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+
+}
+
+#personal-details-container {
+    border: 2px solid #CCCCCC; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+#fraudulent-trading-details-container {
+    border: 2px solid #CCCCCC; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+#legal-disclaimer {
+    border: 2px solid #CCCCCC; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+.submit-content .container .form-group {
+    margin-bottom: 20px; 
+    width: 100%; 
+}
+
+.submit-content .container .form-group select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    appearance: none; 
+    background-color: #FFFFFF; 
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.5 7.5l-3 3-3-3z"/></svg>'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center; 
+    cursor: pointer;
+  }
+
+
+
+.submit-content .container .form-group label {
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+
+.submit-content .container .form-group input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.submit-content .container .form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+
+  .submit-content .container .checkbox-group {
+    margin-bottom: 10px; 
+  }
+  
+  .submit-content .container .checkbox-group input[type="checkbox"] {
+    margin-right: 10px; 
+  }
+
+.submit-button button {
+    padding: 10px 20px; 
+    background-color: #BEE014; 
+    color: #000000; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    width: 150px;
+  }
+  
+  .submit-button button:hover {
+    background-color: #8fa90e;
+  }
+  
