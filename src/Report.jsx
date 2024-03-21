@@ -4,7 +4,7 @@ import './Report.css';
 import myComplaintIcon from './assets/images/myComplaintIcon.png';
 import submitComplaintIcon from './assets/images/submitComplaintIcon.png';
 import reportContentImage from './assets/images/report-contentImage.png';
-import SubmitReport from './SubmitReport'; // Import SubmitReport component
+import SubmitReport from './SubmitReport'; 
 
 function Report() {
     return (
@@ -28,7 +28,7 @@ function Report() {
 
                     <Switch>
                         <Route path="/report">
-                            <div className="fraud-contentl" id='fraud-content'>
+                            <div className="fraud-content" id='fraud-content'>
                                 <h1>Reporting Fraudulent Trading - Your Role in Ensuring Market Integrity</h1>
                                 <div className='fraudContent-imgAndP'>
                                     <img src={reportContentImage} className='fraudContent-image' alt="Help Fight Fraudulent" />

@@ -1,7 +1,6 @@
 import React from 'react';
 import './SubmitReport.css';
-import { Link } from 'react-router-dom';
-import submitComplaintIcon from './assets/images/submitComplaintIcon.png';
+
 
 function SubmitReport() {
   return (
