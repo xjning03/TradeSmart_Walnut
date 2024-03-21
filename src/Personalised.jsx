@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Home.css";
+import "./Personalised.css";
 
 function SearchBar() {
   return (
@@ -9,7 +9,7 @@ function SearchBar() {
   );
 }
 
-function Home() {
+function Personalised() {
   const [isStockSelected, setIsStockSelected] = useState(true);
   const [isCryptoSelected, setIsCryptoSelected] = useState(false);
 
@@ -72,42 +72,6 @@ function Home() {
       totalVolume: 1200.0,
       circulatingSupply: 32.1e9,
     },
-    {
-      symbol: "XRP-USD",
-      name: "Ripple",
-      price: 0.75,
-      change: 0.02,
-      percentageChange: "+2.74%",
-      marketCap: 34.2e9,
-      volumeInCurrencyUTC: 1200.0,
-      volumeInCurrency24hr: 1350.0,
-      totalVolume: 1600.0,
-      circulatingSupply: 45.7e9,
-    },
-    {
-      symbol: "BNB-USD",
-      name: "Binance Coin",
-      price: 250.0,
-      change: -5.0,
-      percentageChange: "-1.96%",
-      marketCap: 38.6e9,
-      volumeInCurrencyUTC: 780.0,
-      volumeInCurrency24hr: 840.0,
-      totalVolume: 950.0,
-      circulatingSupply: 154.5e6,
-    },
-    {
-      symbol: "DOT-USD",
-      name: "Polkadot",
-      price: 40.0,
-      change: 1.0,
-      percentageChange: "+2.56%",
-      marketCap: 36.7e9,
-      volumeInCurrencyUTC: 630.0,
-      volumeInCurrency24hr: 720.0,
-      totalVolume: 850.0,
-      circulatingSupply: 920.0e6,
-    },
   ];
 
   const tableData = [
@@ -158,66 +122,6 @@ function Home() {
       marketCap: "2.55T",
       peRatio: 28.21,
       fraudulentPossibility: "2%",
-    },
-    {
-      symbol: "AMZN",
-      name: "Amazon.com Inc.",
-      price: 3200.0,
-      change: 30.25,
-      percentageChange: "+0.95%",
-      volume: "2.2M",
-      avgVolume: "2.5M",
-      marketCap: "1.61T",
-      peRatio: 61.75,
-      fraudulentPossibility: "4%",
-    },
-    {
-      symbol: "TSLA",
-      name: "Tesla Inc.",
-      price: 840.0,
-      change: 15.5,
-      percentageChange: "+1.88%",
-      volume: "12.8M",
-      avgVolume: "11.5M",
-      marketCap: "813.45B",
-      peRatio: 284.65,
-      fraudulentPossibility: "37%",
-    },
-    {
-      symbol: "FB",
-      name: "Meta Platforms Inc.",
-      price: 300.5,
-      change: -2.75,
-      percentageChange: "-0.91%",
-      volume: "18.3M",
-      avgVolume: "16.7M",
-      marketCap: "857.34B",
-      peRatio: 25.98,
-      fraudulentPossibility: "3%",
-    },
-    {
-      symbol: "NFLX",
-      name: "Netflix Inc.",
-      price: 400.25,
-      change: 7.8,
-      percentageChange: "+1.99%",
-      volume: "8.7M",
-      avgVolume: "9.2M",
-      marketCap: "177.81B",
-      peRatio: 50.71,
-      fraudulentPossibility: "86%",
-    },
-    {
-      symbol: "T",
-      name: "AT&T Inc.",
-      price: 27.8,
-      change: 0.4,
-      percentageChange: "+1.46%",
-      volume: "55.2M",
-      avgVolume: "58.1M",
-      marketCap: "197.45B",
-      peRatio: 8.45,
-      fraudulentPossibility: "1%",
     },
   ];
 
@@ -345,6 +249,11 @@ function Home() {
                 <td>{rowData.circulatingSupply}</td>
               </tr>
             ))}
+            <tr>
+              <td colSpan="10">
+                Description: Add description of the stock here
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -352,4 +261,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Personalised;

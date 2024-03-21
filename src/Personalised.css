@@ -1,0 +1,158 @@
+.search-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.search-bar {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.button-box {
+  width: 40%;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.toggle-btn {
+  padding: 10px 40px;
+  cursor: pointer;
+  /* background: transparent; */
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+
+.toggle-btn.active {
+  color: #fff;
+}
+
+.btn {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: #e67e22;
+  border-radius: 20px;
+  transition: left 0.3s ease;
+}
+
+.form-box {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-box {
+  display: flex;
+}
+
+.button-box > button {
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 4px 40px;
+  margin-left: -20px;
+}
+
+.selected {
+  background: #cee072;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes moveStockToCrypto {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes moveCryptoToStock {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.button-box {
+  width: 40%;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  background: #fff;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+.move-stock-to-crypto {
+  animation-name: moveStockToCrypto;
+}
+
+.move-crypto-to-stock {
+  animation-name: moveCryptoToStock;
+}
+
+.table-container {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.stocklist-table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse; /* Change to collapse */
+  border-radius: 8px;
+  border-color: #ffffff;
+}
+
+.stocklist-table th {
+  background-color: #ffffff;
+  color: #647700;
+  border-color: #fff;
+  border-bottom: 1px solid #647700;
+  border-top: 1px solid #647700;
+}
+
+.stocklist-table thead th {
+  color: #ffffff;
+  background-color: #647700;
+  border-bottom: 1px solid #647700; /* Keep only the bottom border for header */
+}
+
+.stocklist-table tbody tr {
+  border-bottom: 1px solid #ffffff; /* Add a bottom border to each row */
+}
+
+.stocklist-table tbody tr:hover {
+  background-color: #cee072;
+  cursor: pointer;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.green-text {
+  color: rgb(16, 138, 0);
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.symbol-text {
+  font-weight: bold;
+  color: rgb(11, 53, 0);
+}
