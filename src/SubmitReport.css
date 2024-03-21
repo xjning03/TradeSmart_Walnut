@@ -1,0 +1,105 @@
+/* Assuming .submit-content is the parent container */
+.submit-content {
+    width: 1000px; /* Full width */
+    padding: 20px; /* Padding for content */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+
+}
+
+/* Styling for the container with grey border and rounded corners */
+#personal-details-container {
+    border: 2px solid #CCCCCC; /* Grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for text */
+    margin-bottom: 20px; /* Margin to create space between containers */
+    width: 100%; /* Full width minus padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#fraudulent-trading-details-container {
+    border: 2px solid #CCCCCC; /* Grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for text */
+    margin-bottom: 20px; /* Margin to create space between containers */
+    width: 100%; /* Full width minus padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#legal-disclaimer {
+    border: 2px solid #CCCCCC; /* Grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for text */
+    margin-bottom: 20px; /* Margin to create space between containers */
+    width: 100%; /* Full width minus padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Styling for the form group */
+.submit-content .container .form-group {
+    margin-bottom: 20px; 
+    width: 100%; /* Margin to create space between form groups */
+}
+
+.submit-content .container .form-group select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for select dropdown */
+    border: 1px solid #CCCCCC; /* Grey border for select dropdown */
+    border-radius: 5px; /* Rounded corners for select dropdown */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    appearance: none; /* Remove default arrow icon */
+    background-color: #FFFFFF; /* Background color for select dropdown */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.5 7.5l-3 3-3-3z"/></svg>'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center; /* Position of the arrow icon */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+
+
+/* Styling for labels */
+.submit-content .container .form-group label {
+    display: block; /* Display labels as block elements */
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Margin below labels */
+}
+
+/* Styling for input fields */
+.submit-content .container .form-group input {
+    width: 100%;
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #CCCCCC; /* Grey border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.submit-content .container .form-group textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for textarea */
+    border: 1px solid #CCCCCC; /* Grey border for textarea */
+    border-radius: 5px; /* Rounded corners for textarea */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .submit-content .container .checkbox-group {
+    margin-bottom: 10px; /* Add margin below each checkbox group */
+  }
+  
+  /* Styling for checkboxes */
+  .submit-content .container .checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Add margin to the right of the checkbox */
+  }
+
+  /* Styling for the submit button */
+.submit-button button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #BEE014; /* Background color for the button */
+    color: #000000; /* Text color for the button */
+    border: none; /* No border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+    width: 150px;
+  }
+  
+  .submit-button button:hover {
+    background-color: #8fa90e; /* Darker background color on hover */
+  }
+  

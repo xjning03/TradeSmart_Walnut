@@ -1,0 +1,98 @@
+.Report{
+    display: flex;
+    height: 100vh;
+    text-align:left;
+}
+
+.Report .toolbar-row .report-icon {
+  margin-left: 10px;
+    width: 24px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .Report .toolbar-row {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    height: 50px;
+  }
+
+
+  .Report .toolbar-row .toolbar-name {
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .Report .toolbar-row:hover {
+    background-color: #F3F3F3;
+    cursor: pointer; /* Change the color to your desired hover color */
+  }
+
+  .Report .toolbar-row:clicked {
+    background-color: #F3F3F3;
+    
+  }
+
+
+  .Report .toolbar {
+    width: 200px; /* Adjust the width of the sidebar as needed */
+    background-color: #ffffff; /* Example background color */
+    align-items: center; 
+    border: 1px solid #ccc;
+  }
+  
+  .Report .fraud-content {
+    flex: 1; /* Allow content to take up remaining space */
+    padding: 10px; /* Example padding */
+    flex-direction: column;
+    border: 1px solid #ccc;
+  }
+
+  .Report .fraud-content .fraudContent-image{
+    width: 20%;
+    height: auto;
+  }
+
+  .Report .fraud-content .fraudContent-imgAndP p {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .Report .fraud-content .fraudContent-imgAndP {
+    display: flex;
+  }
+
+  
+
+  .Report .fraud-content .table-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .Report .fraud-content .complaint-table {
+    width: 100%;
+    border-collapse: separate; /* Separate border model */
+    border-spacing: 0; /* No space between border cells */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  
+  
+  .Report .fraud-content .complaint-table th {
+    background-color: #ffffff; /* Light grey background for other headers */
+    color: #000000;
+  }
+
+  .Report .fraud-content .complaint-table th[colspan="7"] {
+    background-color: #c0c0c0; /* Dark grey background */
+    color: #000; /* Black text */
+}
+
+.Report .fraud-content .complaint-table thead th {
+    color: #666; /* Grey text for variable rows in the header */
+}
+
+
+
