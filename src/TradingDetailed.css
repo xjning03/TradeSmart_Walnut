@@ -26,11 +26,18 @@
 }
 
 .logo {
+    display: grid;
     width: 5vw;
     height: 5vw;
-    background-color: #ccc;
     border-radius: 50px;
+    place-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 
 .company-container {

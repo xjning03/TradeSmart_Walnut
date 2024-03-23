@@ -53,9 +53,9 @@ function NewsSection() {
                             </span>
                         </div>
                     </Link>
-                        <button className="btn">
+                        {/* <button className="btn">
                           Click for more
-                      </button>
+                      </button> */}
                     </div>
                 </div>
                 <div className='bottom-container'>

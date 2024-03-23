@@ -45,7 +45,7 @@
 .form-box {
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-37%);
 }
 
 .button-box {
@@ -89,7 +89,7 @@
   position: relative;
   border-radius: 30px;
   background: #fff;
-  animation-duration: 0.3s;
+  animation-duration: 0.1s;
   animation-timing-function: ease;
 }
 
@@ -107,15 +107,15 @@
   overflow-x: auto;
 }
 
-.stocklist-table {
+.list-table {
   width: 100%;
   padding: 10px;
-  border-collapse: collapse; /* Change to collapse */
+  border-collapse: collapse; 
   border-radius: 8px;
   border-color: #ffffff;
 }
 
-.stocklist-table th {
+.list-table th {
   background-color: #ffffff;
   color: #647700;
   border-color: #fff;
@@ -123,23 +123,23 @@
   border-top: 1px solid #647700; 
 }
 
-.stocklist-table thead th {
+.list-table thead th {
   color: #ffffff;
   background-color: #647700;
   border-bottom: 1px solid #647700; /* Keep only the bottom border for header */
 }
 
-.stocklist-table tbody tr {
+.list-table tbody tr {
   border-bottom: 1px solid #ffffff; /* Add a bottom border to each row */
+  text-decoration: none;
 }
 
 
-.stocklist-table tbody tr:hover {
+.list-table tbody tr:hover {
   background-color: 
   #CEE072;
   cursor: pointer;
 }
-
 
 
 
@@ -160,4 +160,5 @@
 .symbol-text{
   font-weight: bold;
   color: rgb(11, 53, 0);
+  text-decoration: none;
 }

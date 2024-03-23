@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './TradingDetailed.css';
+import logo from './assets/images/appleLogo.png';
 
 function TradingDetailed() {
     const [navItem, setNavItem] = useState('Chart');
@@ -13,7 +14,9 @@ function TradingDetailed() {
             <div className='container'>
                 <div className='company-container'>
                     <div className='company'>
-                        <div className='logo'></div>
+                        <div className='logo'>
+                            <img src={logo} alt="Apple-Inc"></img>
+                        </div>
                         <h1 className='company-name'>Apple Inc.</h1>
                         <p className='stock-type'>Stock</p>
                     </div>
