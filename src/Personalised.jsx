@@ -171,7 +171,7 @@ function Personalised() {
                 </table>
             </div>
             <div className="Interest">
-                <h2>You Might Interested</h2>
+                <h2>You Might Be Interested</h2>
                 <table className="list-table">
                     <thead>
                     <tr>
