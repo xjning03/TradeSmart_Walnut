@@ -229,6 +229,15 @@ function TradingDetailed() {
                             </p>
                         </div>
                     </div>
+                    <div className="form-comment">
+                    <input
+                        className='form-comment-input'
+                        type='text'
+                        id='comment'
+                        name='comment'
+                        placeholder='Write a comment...'
+                    />
+                    </div>
                 </div>
             </div>
         </div>
