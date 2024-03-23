@@ -21,7 +21,6 @@ function SearchBar({setSearchQuery}) {
 }
 
 function Home() {
-
   const [searchQuery, setSearchQuery] = useState("");
 
   const [navItem, setNavItem] = useState('Stock');
@@ -37,6 +36,7 @@ function Home() {
       <div className="search-bar-container">
         <SearchBar setSearchQuery={setSearchQuery}/>
       </div>
+
 
       <div className={`form-box`}>
         <div className={`button-box`}>

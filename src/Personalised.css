@@ -1,0 +1,34 @@
+.Personalised h1 {
+    color: #647700;
+    font-size: 1.7vw;
+    margin: 2vw;
+}
+
+.Personalised .container_personalised{
+    margin: 3vw;
+    display: flex;
+  }
+  
+.Personalised .container_personalised .Recent {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9ffe2;
+    border-radius: 15px;
+    margin: 0% 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Personalised .container_personalised .Interest {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9ffe2;
+    border-radius: 15px;
+    margin: 0% 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Personalised .container_personalised h2 {
+    color: #647700;
+    font-size: 1.5vw;
+    margin: 0vw 1vw 1vw 1vw;
+}

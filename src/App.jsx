@@ -8,6 +8,7 @@ import NewsDetailed from './NewsDetailed';
 import Education from './Education';
 import Report from './Report';
 import TradingDetailed from './TradingDetailed';
+import Personalised from './Personalised';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/tradingDetailed" component={TradingDetailed} />
         <Route path="/education" component={Education} />
         <Route path="/report" component={Report} />
+        <Route path="/personalised" component={Personalised} />
         <Route path="/" component={Home} />
       </Switch>
     </Router>
